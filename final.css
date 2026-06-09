@@ -54,6 +54,13 @@ text-align: center;
 animation: fadeIn 1s ease forwards;
 display:none ;
 }
+.textearea{
+width: 100%; 
+max-width: 300px; 
+padding: 10px; 
+border-radius: 8px; 
+border: 1px solid #fa1b9a;
+}
 .ticket h2{
 color: #d81b60;
 }
