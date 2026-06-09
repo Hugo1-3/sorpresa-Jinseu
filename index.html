@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>sorpresa_Jinseu:BB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="music" style="display: block;">
+     <button class="next-button" onclick="
+    document.getElementById('musica').play(); 
+    document.getElementById('music').style.display='none'; 
+    document.getElementById('correo').style.display='block';">
+    Play
+  </button>
+     <audio id="musica" src="audio.mp3/audio01.mp3"></audio>
+  </div>
+
+  <Div id="correo" style="display: none;">
+    <h1 class="message">¡Hola Jinseu! 👑</h1>
+   <input id="input-correo" class="next-button" type="email" name="email" 
+      placeholder="Tu correo 💌" required oninput="validarCorreo()">
+    <button id="btn-enviar" class="next-button" style="display: none;" onclick="
+      document.getElementById('correo').style.display = 'none';
+      document.getElementById('temas').style.display = 'block';
+      document.getElementById('audio').play();
+      document.getElementById('musica').pause().currentTime = 0;">
+      Siguiente Sorpresa 💘
+    </button>
+  </Div>
+
+  <div id="temas" style="display:none;">
+    <h1 class="message">¡ME GUSTAS MUCHOOOO!  💖</h1>
+
+      <div id="contenedor-letras" style="margin-top: 30px; min-height: 60px;">
+        <h2 id="texto-sincronizado"></h2>
+      </div>
+
+    <audio id="audio" src="audio.mp3/musica.m4a"></audio>
+  </div>
+  <button id="btn-siguiente" class="next-button" onclick="location.href='te-amo.html'" style="display: none;">Siguiente Sorpresa 💘</button>
+  <canvas id="fireworks"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

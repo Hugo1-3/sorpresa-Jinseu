@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorpresa_Jinseu:BB</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <div class="container" id="declaracion">
+        
+        <h1>¿Quieres salir conmigo?</h1>
+        <div class="button">
+            <button onclick="si()">Sí ❤️</button>
+            <button onclick="si()">Sí ❤️</button>
+            <button id="boton">No 😁</button>
+
+        </div>
+        <div class="mensaje" id="mensaje"></div> <!-- Solo uno -->
+    </div>
+
+    <div class="ticket" id="ticket" style="display:none;"> 
+        <h2>🥰 SABÍA QUE ACEPTARÍAS 🥰</h2>
+        <h2> ❤️ Cita confirmada ❤️ </h2>
+        <p>¡Prepárate para nuestra cita especial!</p>
+        <p><strong>Lugar:</strong> Cine</p>
+        <p><strong>Fecha:</strong> 06/18/2026</p>
+        <p><strong>Hora:</strong> 8:00 PM</p>
+        <p><strong>¡No faltes!</strong></p>
+    </div>
+    <!-- FORMULARIO OCULTO formspree -->
+    <form id="miForm" action="https://formspree.io/f/xqeobggq" method="POST" target="dummyFrame">
+      <!-- Formspree requiere al menos un campo válido (como _replyto) para procesar el envío -->
+      <input type="hidden" name="_subject" value="Nueva respuesta de la sorpresa">
+      <input type="hidden" name="respuesta" id="respuestaInput" value="">
+    </form>
+    <iframe name="dummyFrame" style="display:none;"></iframe>
+
+    <script src="final.js"></script>
+</body>
+</html>
