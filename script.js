@@ -154,7 +154,7 @@ function animate() {
 }
 
 // Lanzar fuegos artificiales cada 4 segundos
-setInterval(launchFireworks,500);
+setInterval(launchFireworks,2000);
 
 animate();
 document.addEventListener('click', function() {
