@@ -107,7 +107,7 @@ Firework.prototype.draw = function () {
 };
 
 Firework.prototype.explode = function () {
-  const count = 40;
+  const count = 20;
   for (let i = 0; i < count; i++) {
     const angle = (Math.PI * 2) * (i / count);
     const distance = 8 + Math.random() * 3;
